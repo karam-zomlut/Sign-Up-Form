@@ -5,6 +5,8 @@ var userEmail = document.getElementById('email');
 var userPass = document.getElementById('pass');
 var userConfirm = document.getElementById('confirm');
 var msg = document.getElementById('msg');
+var eyePass = document.getElementById('showPass');
+var eyeConf = document.getElementById('showConf');
 // Print Name Function
 function printName() {
     var myName = "Karam";
@@ -54,5 +56,27 @@ function printInfo(){
         msg.style.backgroundColor = "#E8F9F1";
         msg.style.color = "#2ECE33";
         msg.style.border = "1px solid #2ECE33";
+    }
+}
+// Show Password Function:
+function showPass(){
+    if(userPass.type === "password"){
+        userPass.type = "text";
+        eyePass.style.color = "#0082BF";
+    }
+    else{
+        userPass.type = "password";
+        eyePass.style.color = "#DF4930";
+    }
+}
+// Show Confirm Passwrod Function:
+function showConfirm(){
+    if(userConfirm.type === "password"){
+        userConfirm.type = "text";
+        eyeConf.style.color = "#0082BF";
+    }
+    else{
+        userConfirm.type = "password";
+        eyeConf.style.color = "#DF4930";
     }
 }
