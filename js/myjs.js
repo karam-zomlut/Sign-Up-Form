@@ -27,32 +27,32 @@ function printInfo(){
     }
     // Validation Form.
     if(userName.value == "" || userPass.value == "" || userEmail.value == "" || userConfirm.value == ""){
-        msg.innerHTML = "All Fields Are Required !" + " " + "<sapn class=\"far fa-frown\"></span";
+        msg.innerHTML = "<sapn class=\"fas fa-times-circle\"></sapn>" + " " +"All Fields Are Required!";
         msg.style.backgroundColor = "#FAEEEE";
         msg.style.color = "#DF4930";
         msg.style.border = "1px solid #DF4930";
     }
     else if(userName.value.length<3){
-        msg.innerHTML = "User Name is Very Short !" + " " + "<sapn class=\"far fa-frown\"></span";
-        msg.style.backgroundColor = "#FAEEEE";
-        msg.style.color = "#DF4930";
-        msg.style.border = "1px solid #DF4930";
+        msg.innerHTML = "<sapn class=\"fas fa-exclamation-circle\"></sapn>" + " " +"Warning! User Name is Very Short.";
+        msg.style.backgroundColor = "#FFF8E4";
+        msg.style.color = "#FFC000";
+        msg.style.border = "1px solid #FFC000";
     }
     else if(userPass.value.length<8){
-        msg.innerHTML = "Password is Very Short !" + " " + "<sapn class=\"far fa-frown\"></span";
-        msg.style.backgroundColor = "#FAEEEE";
-        msg.style.color = "#DF4930";
-        msg.style.border = "1px solid #DF4930";
+        msg.innerHTML = "<sapn class=\"fas fa-exclamation-circle\"></sapn>" + " " + "Warning! Password is Very Short.";
+        msg.style.backgroundColor = "#FFF8E4";
+        msg.style.color = "#FFC000";
+        msg.style.border = "1px solid #FFC000";
     }
     else if(userConfirm.value != userPass.value){
-        msg.innerHTML = "Passwords Not Matched !" + " " + "<sapn class=\"far fa-frown\"></span";
+        msg.innerHTML = "<sapn class=\"fas fa-times-circle\"></sapn>" + " " + "Passwords Not Matched !";
         msg.style.backgroundColor = "#FAEEEE";
         msg.style.color = "#DF4930";
         msg.style.border = "1px solid #DF4930";
     }
     else{
         console.log(printValidate());
-        msg.innerHTML = "You Are Welcome" + " " + "<sapn class=\"far fa-smile\"></span";
+        msg.innerHTML = "<sapn class=\"fas fa-check-circle\"></sapn>" + " " + "You Are Welcome";
         msg.style.backgroundColor = "#E8F9F1";
         msg.style.color = "#2ECE33";
         msg.style.border = "1px solid #2ECE33";
