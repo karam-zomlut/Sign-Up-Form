@@ -1,0 +1,196 @@
+/* Start Font Faces */
+@font-face{
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-family: 'ubuntu';
+}
+/* End Font Faces */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body, .container{
+    width: 100%;
+    min-height: 100vh;
+}
+/* Style The Header */
+.container{
+    background: #bdc3c7;
+    background: linear-gradient(45deg, rgba(44, 62, 80,0.4), rgba(189, 195, 199, 0.4)), url(../img/mountain.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ubuntu';
+}
+/* Style The Form */
+.container .form{
+    min-height: 300px;
+    background-color: rgba(255,255,255,.1);
+    padding: 30px 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    margin: 30px 15px;
+}
+/* Start Style Help Div */
+.form .help{
+    text-align: center;
+}
+.form .heading{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 0 0 20px rgb(80, 124, 192,.8);
+}
+.form .sign-with{
+    font-size: 14px;
+    text-align: center;
+    color: #ddd;
+
+}
+.form .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.form .social .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: color 1s ease, background-color .5s ease;
+}
+.form .social .face{
+    background-color: #507CC0;
+}
+/* Hover Effects for Social Icon */
+.form .social .face:hover{
+    color: #507CC0;
+    background-color: #fff;
+}
+.form .social .twitter{
+    background-color: #64CCF1;
+}
+.form .social .twitter:hover{
+    color: #64CCF1;
+    background-color: #fff;
+}
+.form .social .in{
+    background-color: #0082BF;
+}
+.form .social .in:hover{
+    color: #0082BF;
+    background-color: #fff;
+}
+.form .social .google{
+    background-color: #DF4930;
+}
+.form .social .google:hover{
+    color: #DF4930;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Style Or Word */
+.form .option{
+    width: 30px;
+    height: 30px;
+    color: #555;
+    border: 2px solid #555;
+    border-radius: 50%;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.form .option::after{
+    content: '';
+    width: 100px;
+    height: 1.5px;
+    position: absolute;
+    top: 13px;
+    left: 28px;
+    background-color: #555;
+}
+.form .option::before{
+    content: '';
+    width: 100px;
+    height: 1.5px;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    background-color: #555;
+}
+/* End Style Help Div */
+/* Start Style Input Fields */
+.form .inpt{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: border-radius .8s ease;
+}
+.form .inpt:focus{
+    border-radius: 25px;
+}
+.lbl{
+    color: #444;
+    font-size: 15px;
+}
+.form .btn{
+    border: none;
+    margin: 0;
+    background-color: #5CB85C;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    transition: color 1s ease, background-color 1s ease;
+}
+.form .btn:hover{
+    background-color: #fff;
+    color: #5CB85C;
+}
+.form .signin{
+    text-align: center;
+    font-size: 13px;
+    margin: 15px 0 0;
+    color:#333;
+}
+.form .signin a{
+    color: #024c6e;
+    font-weight: bold;
+}
+.msg{
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 12px 10px;     
+    font-size: 14px;
+    font-weight: bold;
+}
+/* End Style Input Fields */
+/* Start My FramWork */
+.inline-block{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.inpt,.btn:focus{
+    outline: none;
+}
+/* End My Framwork */

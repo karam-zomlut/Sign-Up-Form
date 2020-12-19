@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Js Assignment</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="container">
+        <!-- Start Form -->
+        <form class="form" id="form" onsubmit="return false">
+            <!-- title and sign with -->
+            <div class="help">
+                <h2 class="heading">Creat an Account</h2>
+                <p class="sign-with">Sign up with your social account or google</p>
+                <div class="social">
+                    <a href="#" class="inline-block" target="_blank"><sapn class="fab fa-facebook-f icon face"></sapn></a>
+                    <a href="#" class="inline-block" target="_blank"><sapn class="fab fa-twitter icon twitter"></sapn></a>
+                    <a href="#" class="inline-block" target="_blank"><sapn class=" fab fa-linkedin-in icon in"></sapn></a>
+                    <a href="#" class="inline-block" target="_blank"><sapn class="fab fa-google icon google"></sapn></a>
+                </div>
+                <span class="option inline-block">or</span>
+            </div>
+            <!-- Input Fields -->
+            <input type="text" class="inpt block" id="name" required placeholder="User Name">
+            <input type="email" class="inpt block" id="email" required placeholder="Email Address">
+            <input type="password" class="inpt block" id="pass" required placeholder="Password">
+            <input type="password" class="inpt block" id="confirm" required placeholder="Confirm Password">
+            <input type="checkbox" class="inline-block"> <label class="lbl inline-block" for="checkbox">Remember Me</label>
+            <p id="msg" class="msg"></p>
+            <button  onclick="printInfo()" id="print" class="btn block">Sign Up</button>
+            <p class="signin">Already Have Account? <a href="#">Sign in</a></p>
+        </form>
+        <!-- End Form -->
+    </header>
+    <!-- End Header -->
+    <!-- Start My Js File -->
+    <script>
+        console.log('JS Quiz')
+    </script>
+    <script src="js/myjs.js"></script>
+    <!-- End My Js File -->
+</body>
+</html>
