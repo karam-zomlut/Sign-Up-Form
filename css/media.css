@@ -25,10 +25,3 @@
         flex-basis: 40%;
     }   
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .container .form{
-        flex-basis: 25%;
-    }
-}
