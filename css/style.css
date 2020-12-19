@@ -32,6 +32,7 @@ html, body, .container{
     border-radius: 15px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
     margin: 30px 15px;
+    position: relative;
 }
 /* Start Style Help Div */
 .form .help{
@@ -145,6 +146,17 @@ a{
 .lbl{
     color: #444;
     font-size: 15px;
+}
+.form .show{
+    position: absolute;
+    right: 8%;
+    transform: translateY(-45px);
+    -webkit-transform: translateY(-45px);
+    -moz-transform: translateY(-45px);
+    -ms-transform: translateY(-45px);
+    -o-transform: translateY(-45px);
+    cursor: pointer;
+    color: #DF4930;
 }
 .form .btn{
     border: none;
