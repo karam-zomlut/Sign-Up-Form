@@ -29,7 +29,9 @@
             <input type="text" class="inpt block" id="name" required placeholder="User Name">
             <input type="email" class="inpt block" id="email" required placeholder="Email Address">
             <input type="password" class="inpt block" id="pass" required placeholder="Password">
+            <span class="far fa-eye show" id="showPass" onclick="showPass()"></span>
             <input type="password" class="inpt block" id="confirm" required placeholder="Confirm Password">
+            <span class="far fa-eye show" id="showConf" onclick="showConfirm()"></span>
             <input type="checkbox" class="inline-block"> <label class="lbl inline-block" for="checkbox">Remember Me</label>
             <p id="msg" class="msg"></p>
             <button  onclick="printInfo()" id="print" class="btn block">Sign Up</button>
